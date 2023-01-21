@@ -1,4 +1,4 @@
-# sbt-buildlevel
+# sbt-buildlevel [![Scala CI](https://github.com/julianpeeters/sbt-buildlevel/workflows/Scala%20CI/badge.svg)](https://github.com/julianpeeters/sbt-buildlevel/actions?query=workflow%3A%22Scala+CI%22) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.julianpeeters/sbt-buildlevel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.julianpeeters/sbt-buildlevel)
 Which build is currently loaded, meta-build or proper build?
 
 This is a library for sbt plugins, particularly global sbt plugins:
@@ -14,4 +14,17 @@ lazy val myplugin = (project in file("."))
   .settings(
     addSbtPlugin("com.julianpeeters" % "sbt-buildlevel" % SbtBuildLevelV),
     ...
+```
+
+## Use the library
+Import the setting key in a plugin:
+
+```scala
+import sbt._
+import sbtbuildlevel.Key.autoImport.buildLevel 
+import sbtbuildlevel.ProperBuild
+
+object MyPlugin extends AutoPlugin {
+  if (buildlevel.value == ProperBuild) ...
+  else ...
 ```
