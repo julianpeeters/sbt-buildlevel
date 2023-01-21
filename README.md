@@ -1,5 +1,4 @@
-# sbt-buildlevel [![Scala CI](https://github.com/actions/setup-java/actions/workflows/ci.yml/badge.svg)](https://github.com/actions/setup-java/actions/workflows/ci.yml)
- [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.julianpeeters/sbt-buildlevel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.julianpeeters/sbt-buildlevel)
+# sbt-buildlevel [![Scala CI](https://github.com/actions/setup-java/actions/workflows/ci.yml/badge.svg)](https://github.com/actions/setup-java/actions/workflows/ci.yml) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.julianpeeters/sbt-buildlevel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.julianpeeters/sbt-buildlevel)
 Which build is currently loaded, meta-build or proper build?
 
 This is a library for sbt plugins, particularly global sbt plugins:
